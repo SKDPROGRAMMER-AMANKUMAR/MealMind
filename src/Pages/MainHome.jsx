@@ -124,7 +124,7 @@ const MealMindHomepage = () => {
      dispatch(addMealToCart(selectedMeal[0])); // This sends a single object
   }
   try {
-    const savefoodAddToCarttoDB = await saveFoodMealsToDatabase(selectedMeal?.title,selectedMeal.image,userId)
+    const savefoodAddToCarttoDB = await saveFoodMealsToDatabase(selectedMeal?.title,selectedMeal.image,UserId)
     if(savefoodAddToCarttoDB){
       console.log("Image successfully savve to addToCartCollection(MainHome.jsx)",savefoodAddToCarttoDB)
     }
@@ -1535,8 +1535,8 @@ const MealMindHomepage = () => {
       return;
     }
 
-    const userId = getUserID();
-    if (!userId) {
+    // const userId = getUserID();
+    if (!UserId) {
     console.error("No user ID found. User might not be logged in.");
     return;
   }
@@ -1553,7 +1553,7 @@ const MealMindHomepage = () => {
       dispatch(addMealToFavorites(filteredMeals[0])); // This sends a single object
     }
     try {
-      const savefoodimagetostorage = await saveFoodImageToStorage(filteredMeals[0]?.title,filteredMeals[0]?.image,userId,dispatch)
+      const savefoodimagetostorage = await saveFoodImageToStorage(filteredMeals[0]?.title,filteredMeals[0]?.image,UserId,dispatch)
       if(savefoodimagetostorage){
         console.log("Image successfully get to storage(MainHome.jsx)")
       }
