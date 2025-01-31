@@ -25,7 +25,7 @@ import { FaListUl } from "react-icons/fa";
 import { FaGalacticSenate } from "react-icons/fa6";
 import {PulseLoader} from "react-spinners"
 import {getMealInfo} from "../Appwrite/fetchMealInfo"
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 // import { getSavedMealData } from "../Appwrite/fetchMealInfo";
 // import {addMealToFavorites} from "../Redux/getSavedmealSlice".
 import {addMealToFavorites} from "../Redux/getSavedmealSlice"
@@ -56,6 +56,7 @@ const MealMindHomepage = () => {
   const fileID = useSelector((state) => state.getFileId.GetFileId)
   const userKiId = getUserID()
   // console.log("userKiId from MainHome:",userKiId)
+  const UserId = useSelector((state) => state.getFileId.GetUserId)
 
   useEffect(() => {
     const checkUser = async () => {
@@ -106,8 +107,8 @@ const MealMindHomepage = () => {
       return;
     }
 
-    const userId = getUserID();
-    if (!userId) {
+    // const userId = getUserID();
+    if (!UserId) {
     console.error("No user ID found. User might not be logged in.");
     return;
   }
