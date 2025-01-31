@@ -1679,7 +1679,7 @@ const MealMindHomepage = () => {
             </div>
             </Link>
             <Menu
-              className="cursor-pointer text-white"
+              className="cursor-pointer text-[white]"
               onClick={() => setIsMobileMenuOpen(true)}
             />
           </div>
@@ -1788,7 +1788,7 @@ const MealMindHomepage = () => {
               initial={{ translateY: "100%" }}
               animate={{ translateY: 0 }}
               exit={{ translateY: "100%" }}
-              className="w-full bg-white dark:bg-slate-800 rounded-t-2xl p-6 space-y-4"
+              className="w-full bg-[#ffc400] dark:bg-slate-800 rounded-t-2xl p-6 space-y-4"
             >
               <div className="flex justify-between items-center">
                 <span className="text-xl font-bold text-teal-600">Menu</span>
