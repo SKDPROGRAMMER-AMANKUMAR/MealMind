@@ -35,6 +35,7 @@ import { account } from "../Appwrite/AppwriteConfig";
 import {addMealToCart} from "../Redux/AddToCartSlice.js"
 import {saveFoodMealsToDatabase,LogoutUser} from "../Appwrite/auth.js"
 import { storage } from "../Appwrite/AppwriteConfig";
+import conf from "../Appwrite/Conf.js"
 
 const ITEMS_PER_PAGE = 10;
 
