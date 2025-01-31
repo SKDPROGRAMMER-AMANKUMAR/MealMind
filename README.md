@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 
 <!-- make the page for Privacy Policy of a personalize recepie manager  name "MealMind",  use some react-icons and lucide-react to make it visually appleaing , use only React.js(vite) and Tailwind css .. -->
+
+After some time I'll add the readme of it 
