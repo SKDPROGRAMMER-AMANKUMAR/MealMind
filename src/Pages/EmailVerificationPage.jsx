@@ -45,7 +45,7 @@ const EmailVerificationPage = () => {
             const userLoginData = await usergetLoggedIn() 
             setVerificationState('success');
             setTimeout(() => {
-                // navigate('/home');
+                navigate('/home');
                 dispatch(setUser(userLoginData))
                 toast.success("Email Successfully Verified")
             }, 3000);

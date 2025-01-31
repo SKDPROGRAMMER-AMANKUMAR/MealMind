@@ -48,8 +48,8 @@ function App() {
           <Route path="/resetPassword" element={<PasswordResetForm />} />
           <Route path="/auth" element={<AuthProvider />} />
           <Route path="*" element={<Error />} />
-        </Route>
           <Route path="/verify" element={<EmailVerificationPage />} />
+        </Route>
 
         {/* private routes */}
         <Route element={<ProtectedRouteInside />}>
