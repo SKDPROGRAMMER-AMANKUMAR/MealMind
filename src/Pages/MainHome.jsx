@@ -53,7 +53,7 @@ const MealMindHomepage = () => {
   const [imageUrl,setImageUrl] = useState(null)
   // const [userId,setUserId] = useState('')
   const dispatch = useDispatch()
-  // const fileID = useSelector((state) => state.getFileId.GetFileId)
+  const fileID = useSelector((state) => state.getFileId.GetFileId)
   const userKiId = getUserID()
   // console.log("userKiId from MainHome:",userKiId)
 
