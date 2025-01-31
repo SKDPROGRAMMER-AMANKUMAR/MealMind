@@ -1654,7 +1654,7 @@ const MealMindHomepage = () => {
             </div>
             </Link>
             <Menu
-              className="cursor-pointer text-white"
+              className="cursor-pointer text-[#ffd504]"
               onClick={() => setIsMobileMenuOpen(true)}
             />
           </div>
@@ -1679,7 +1679,7 @@ const MealMindHomepage = () => {
             </div>
             </Link>
             <Menu
-              className="cursor-pointer text-[white]"
+              className="cursor-pointer text-[#7e0dff]"
               onClick={() => setIsMobileMenuOpen(true)}
             />
           </div>
