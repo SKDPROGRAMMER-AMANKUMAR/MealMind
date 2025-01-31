@@ -59,7 +59,10 @@ const EmailVerificationPage = () => {
     const sendVerificationEmail = async () => {
         try {
             setVerificationState('sending');
-            await account.createVerification(window.location.origin + '/verify');
+            // Make sure the URL is correctly formatted
+        const verificationUrl = `${window.location.origin}/verify`;
+        console.log('Verification URL:', verificationUrl); // For debugging
+            await account.createVerification(verificationUrl);
             setVerificationState('sent');
         } catch (error) {
             setVerificationState('error');

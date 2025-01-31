@@ -47,9 +47,9 @@ function App() {
           <Route path="/forgetPassword" element={<ForgotPassword />} />
           <Route path="/resetPassword" element={<PasswordResetForm />} />
           <Route path="/auth" element={<AuthProvider />} />
-          <Route path="/verify" element={<EmailVerificationPage />} />
           <Route path="*" element={<Error />} />
         </Route>
+          <Route path="/verify" element={<EmailVerificationPage />} />
 
         {/* private routes */}
         <Route element={<ProtectedRouteInside />}>
