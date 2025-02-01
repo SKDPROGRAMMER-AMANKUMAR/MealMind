@@ -113,13 +113,13 @@ export const createUserAccount = async (
 
 export const LoggedInUser = async (email, password) => {
   try {
-    const session = await account.get();
-    if (session) {
-      console.log("User is already logged in:", session);
-      // Redirect user to homepage if already logged in
-      window.location.href = "/home";
-      return;
-    } 
+    // const session = await account.get();
+    // if (session) {
+    //   console.log("User is already logged in:", session);
+    //   // Redirect user to homepage if already logged in
+    //   window.location.href = "/home";
+    //   return;
+    // } 
 
     const userLogged = await account.createEmailPasswordSession(
       email,
