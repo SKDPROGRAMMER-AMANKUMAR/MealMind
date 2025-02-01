@@ -117,7 +117,7 @@ export const LoggedInUser = async (email, password) => {
     if (session) {
       console.log("User is already logged in:", session);
       // Redirect user to homepage if already logged in
-      window.location.href = "/verify";
+      window.location.href = "/home";
       return;
     } 
 
