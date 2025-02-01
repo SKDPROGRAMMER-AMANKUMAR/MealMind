@@ -60,7 +60,7 @@ export const createUserAccount = async (
     if (userAccount && Profile) {
       console.log("Account created successfully");
       dispatch(setDocId(documetnId));
-      console.log("The user account is: ", userAccount);
+      // console.log("The user account is: ", userAccount);
       dispatch(setemailId(userEmail));
       dispatch(setuserId(userId));
       // console.log("The profile is: ", Profile);
