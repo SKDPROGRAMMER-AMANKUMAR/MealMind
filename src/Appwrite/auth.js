@@ -145,9 +145,11 @@ export const LoggedInUser = async (email, password) => {
 export const LogoutUser = async () => {
   try {
     // Attempt to delete the current session
-    await account.deleteSessions();
-    console.log("User logged out successfully.");
-    return true;
+    let userGetLogout =  await account.deleteSessions();
+    if (userGetLogout){
+      console.log("User logged out successfully.");
+      return true;
+    }
   } catch (error) {
     if (error.code === 401) {
       console.error("Unauthorized: No active session found.");
