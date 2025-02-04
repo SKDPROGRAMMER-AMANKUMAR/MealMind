@@ -1611,8 +1611,10 @@ const MealMindHomepage = () => {
 
           <div className="absolute right-4 flex space-x-4">
             {/* <Link to="/favourites"> */}
+            <Link to="/logout">
             <LogOut onClick={LoginPage} className="cursor-pointer text-slate-600 hover:text-teal-600"/>
             {/* <Star  /> */}
+            </Link>
             {/* </Link> */}
             <Link to="/favourites">
             <Star className="cursor-pointer text-slate-600 hover:text-teal-600" />
