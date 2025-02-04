@@ -140,7 +140,7 @@ const MealMindHomepage = () => {
     try {
       const userloggedOut = await LogoutUser()
       if(userloggedOut){
-        navigate("/logout")
+        navigate("/home")
       }
     } catch (error) {
       console.log("User not get logged out",error.message)
